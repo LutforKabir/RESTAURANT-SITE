@@ -1,0 +1,316 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+[class*="col-"]{
+    width: 100%;
+}
+/*header start*/
+header{
+    background-color: #4156c9;
+    padding: 0% 1%;
+    text-align: center;
+}
+.logo a i{
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+nav ul li{
+    display: block;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 70px;
+    font-size: .9rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    transition: .4s;
+    font-weight: bolder;
+}
+nav ul li a:hover{
+    background-color: black;
+    opacity: .5;
+    border-radius: 10PX;
+}
+
+/*header Ends*/
+/*Banner Starts*/
+
+#banner-section{
+    background-image: url("images/coffee-shop\ 1.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner-contents{
+    text-align: center;
+    padding: 50px 10px;
+}
+.banner-contents h1{
+    width: 100%;
+    font-size: 3rem;
+    margin: 15px auto;
+    font-family: 'Handlee', cursive;
+    background-color: rgba(255, 255, 0, 0.884);
+    border-radius: 5px;
+    padding: 10px;
+}
+.banner-contents p{
+    width: 300px;
+    margin: 15px auto;
+    background-color: rgb(0, 128, 0);
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn{
+    width: 160px;
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 128, 0);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+/*Banner Ends*/ 
+/*About us Starts*/
+
+#about-us{
+    color: white;
+    text-align: center;
+    padding: 1%;
+    background-color: #4156c9;
+    }
+.aboutus-content h3{
+    margin: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.aboutus-content p{
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+#about-us{
+    content: '';
+    clear: both;
+    display: table;
+}
+/*About us Ends*/ 
+/*Food Menu Starts*/ 
+#menu-section{
+    padding: 1%;
+}
+.card-body{
+    text-align: center;
+}
+.card{
+    transition: .4s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-body img{
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+.card-desc{
+    background-color: rgb(165, 164, 164) ;
+}
+.item-name{
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+.card-desc > p{
+    margin: 10px;
+    font-weight: bolder;
+}
+
+
+/*Food Menu Ends*/ 
+/*Contact start*/ 
+#contact{
+    padding: 1%;
+    background-color: rgb(44, 173, 65);
+     }
+.contact-details{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.map{
+    width: 100%;
+    height: 250px;
+}
+.contact-details p, address{
+    font-size: .8rem;
+}
+main{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+/*Contact Ends*/ 
+
+footer{
+    padding: 1%;
+    color: white;
+    background-color: #060936;
+}
+footer p{
+    line-height: 28px;
+    text-align: center;
+    font-size: .8rem;
+}
+.social-menus{
+    text-align: center;
+}
+.botn{
+
+    width: 50px;
+    height: 50px;
+    line-height: 28px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin: 0 10px;
+    transition: .4s;
+    text-align: center;
+}
+.social-menus .botn:hover{
+    background-color: grey;
+    transform: scale(1.2);
+}
+
+
+
+/* For small screen: */
+@media (min-width:576px){
+ 
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+/* For medium screen: */
+@media (min-width:768px){
+ 
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+}
+/* For Large screen: */
+@media (min-width:992px){
+    .logo{
+        text-align: left;
+    }
+    nav ul{
+        text-align: right;
+    }
+    nav ul li{
+        display: inline-block;
+    }
+    nav ul li a{
+        display: inline-block;
+        padding: 0 10px;
+        
+    }
+    nav ul li a:hover{
+        background-color: transparent;
+        transform: scale(1.5);
+        border-radius: 0;
+        text-decoration: underline;
+    }
+
+    #banner-section{
+        position: relative;
+        height: 100vh;
+    }
+
+    .banner-contents{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    .banner-contents h1{
+        font-size: 3.5rem;
+        width: 700px;
+    }
+    .banner-contents p{
+        font-size: 2rem;
+        width: 500px;
+    }
+    
+ 
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+
+
